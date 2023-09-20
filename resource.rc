@@ -1,0 +1,15 @@
+// Inclui o cabeçalho windows.h, que é necessário para trabalhar com recursos no Windows.
+#include <windows.h>
+
+// Inicia a definição do arquivo de recursos.
+#ifndef _recource_rc
+#define _recource_rc // Define um nome simbólico _recource_rc para evitar inclusão múltipla do mesmo arquivo.
+
+// Define o ícone principal (MAINICON) como "favicon.ico".
+MAINICON ICON "src\\favicon.ico"
+
+// Define outro ícone (EXIT_ICO) como "app.ico". Isso pressupõe que você possui outro ícone chamado "app.ico".
+EXIT_ICO ICON "src\\app.ico" // Este ícone pode ser usado para outra finalidade no programa.
+
+// Fecha a definição do arquivo de recursos.
+#endif // Fecha o condicional de inclusão.
